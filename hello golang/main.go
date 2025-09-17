@@ -3,5 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, World!")
+	var checkstring string
+	//String zero value is empty string
+	fmt.Println(checkstring)
 }
