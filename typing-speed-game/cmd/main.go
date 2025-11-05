@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/utk2602/typing-speed-game/internal/game"
-	"github.com/utk2602/typing-speed-game/internal/ui"
+	"github.com/utk2602/Golang/typing-speed-game/internal/game"
+	"github.com/utk2602/Golang/typing-speed-game/internal/ui"
 )
 
 func main() {

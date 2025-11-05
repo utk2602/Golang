@@ -34,7 +34,7 @@
 ### After you publish to GitHub, users can:
 
 ```bash
-go install github.com/utk2602/typing-speed-game/cmd@latest
+go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
 ```
 
 Then run with:
@@ -62,7 +62,7 @@ git push -u origin main
 
 ### 3. Test Installation:
 ```bash
-go install github.com/utk2602/typing-speed-game/cmd@latest
+go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
 cmd
 ```
 
@@ -135,7 +135,7 @@ cmd
 1. Create public repo on GitHub
 2. Push code (see PUBLISHING.md)
 3. Create v1.0.0 release
-4. Share install command: `go install github.com/utk2602/typing-speed-game/cmd@latest`
+4. Share install command: `go install github.com/utk2602/Golang/typing-speed-game/cmd@latest`
 
 ### Option 4: Build for Multiple Platforms 🌍
 ```bash

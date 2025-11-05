@@ -11,7 +11,7 @@
 Once you push your code to GitHub, anyone can install it with:
 
 ```bash
-go install github.com/utk2602/typing-speed-game/cmd@latest
+go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
 ```
 
 This will:
@@ -132,8 +132,8 @@ where.exe cmd  # Windows
 
 3. **Reinstall:**
    ```bash
-   go clean -i github.com/utk2602/typing-speed-game/cmd
-   go install github.com/utk2602/typing-speed-game/cmd@latest
+   go clean -i github.com/utk2602/Golang/typing-speed-game/cmd
+   go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
    ```
 
 ### Permission Denied (Linux/Mac)

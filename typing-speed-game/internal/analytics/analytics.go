@@ -1,7 +1,7 @@
 package analytics
 
 import (
-	"github.com/utk2602/typing-speed-game/pkg/models"
+	"github.com/utk2602/Golang/typing-speed-game/pkg/models"
 )
 
 type Analytics struct {

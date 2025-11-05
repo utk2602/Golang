@@ -68,7 +68,7 @@ Follow these steps (detailed in PUBLISHING.md):
 
 4. **Others can install:**
    ```bash
-   go install github.com/utk2602/typing-speed-game/cmd@latest
+   go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
    ```
 
 ## File Structure 📁

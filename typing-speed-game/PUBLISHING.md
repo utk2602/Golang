@@ -58,7 +58,7 @@ git push -u origin main
    
    ### Installation
    ```bash
-   go install github.com/utk2602/typing-speed-game/cmd@latest
+   go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
    ```
    
    ### What's New
@@ -75,7 +75,7 @@ Now test that others can install it:
 rm $(go env GOPATH)/bin/cmd
 
 # Install from GitHub
-go install github.com/utk2602/typing-speed-game/cmd@latest
+go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
 
 # Try running it
 cmd
@@ -86,7 +86,7 @@ cmd
 Now anyone can install your CLI with:
 
 ```bash
-go install github.com/utk2602/typing-speed-game/cmd@latest
+go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
 ```
 
 ## Updating Your CLI
@@ -101,7 +101,7 @@ git push
 
 # Create a new release (e.g., v1.1.0) on GitHub
 # Users can update with:
-go install github.com/utk2602/typing-speed-game/cmd@latest
+go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
 ```
 
 ## Common Issues
@@ -113,7 +113,7 @@ go install github.com/utk2602/typing-speed-game/cmd@latest
 
 ### Issue: Users get old version
 - Create a new Git tag: `git tag v1.1.0 && git push origin v1.1.0`
-- Users run: `go install github.com/utk2602/typing-speed-game/cmd@v1.1.0`
+- Users run: `go install github.com/utk2602/Golang/typing-speed-game/cmd@v1.1.0`
 
 ### Issue: "permission denied"
 - Repository might be private
@@ -171,7 +171,7 @@ git push origin v1.1.0
 - [ ] `go.mod` has correct module path
 - [ ] All code is pushed
 - [ ] Release v1.0.0 is created
-- [ ] You can install with `go install github.com/utk2602/typing-speed-game/cmd@latest`
+- [ ] You can install with `go install github.com/utk2602/Golang/typing-speed-game/cmd@latest`
 - [ ] README has clear installation instructions
 - [ ] LICENSE file exists
 

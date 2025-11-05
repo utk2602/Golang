@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/utk2602/typing-speed-game/data"
-	"github.com/utk2602/typing-speed-game/internal/analytics"
-	"github.com/utk2602/typing-speed-game/internal/storage"
-	"github.com/utk2602/typing-speed-game/internal/ui"
-	"github.com/utk2602/typing-speed-game/pkg/models"
+	"github.com/utk2602/Golang/typing-speed-game/data"
+	"github.com/utk2602/Golang/typing-speed-game/internal/analytics"
+	"github.com/utk2602/Golang/typing-speed-game/internal/storage"
+	"github.com/utk2602/Golang/typing-speed-game/internal/ui"
+	"github.com/utk2602/Golang/typing-speed-game/pkg/models"
 )
 
 type Game struct {
