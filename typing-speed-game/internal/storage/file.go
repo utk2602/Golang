@@ -5,11 +5,11 @@ import (
 	"os"
 	"sync"
 
-	"typing-speed-game/pkg/models"
+	"github.com/utk2602/typing-speed-game/pkg/models"
 )
 
 type FileStorage struct {
-	mu sync.Mutex
+	mu       sync.Mutex
 	filePath string
 }
 
@@ -17,7 +17,7 @@ func NewFileStorage(filePath string) *FileStorage {
 	return &FileStorage{filePath: filePath}
 }
 
-func (fs *FileStorage) Save(records []models.Record) error {
+func (fs *FileStorage) Save(records []models.TypingSpeedRecord) error {
 	fs.mu.Lock()
 	defer fs.mu.Unlock()
 
@@ -28,24 +28,27 @@ func (fs *FileStorage) Save(records []models.Record) error {
 	defer file.Close()
 
 	encoder := json.NewEncoder(file)
+	encoder.SetIndent("", "  ")
 	return encoder.Encode(records)
 }
 
-func (fs *FileStorage) Load() ([]models.Record, error) {
+func (fs *FileStorage) Load() ([]models.TypingSpeedRecord, error) {
 	fs.mu.Lock()
 	defer fs.mu.Unlock()
 
 	file, err := os.Open(fs.filePath)
 	if err != nil {
 		if os.IsNotExist(err) {
-			return []models.Record{}, nil
+			return []models.TypingSpeedRecord{}, nil
 		}
 		return nil, err
 	}
 	defer file.Close()
 
-	var records []models.Record
+	var records []models.TypingSpeedRecord
 	decoder := json.NewDecoder(file)
-	err = decoder.Decode(&records)
-	return records, err
+	if err := decoder.Decode(&records); err != nil {
+		return []models.TypingSpeedRecord{}, nil
+	}
+	return records, nil
 }

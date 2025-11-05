@@ -1,0 +1,30 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+typing-speed-game
+typing-game
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Data files
+typing_records.json
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
