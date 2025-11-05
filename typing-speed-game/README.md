@@ -17,7 +17,7 @@ A sleek command-line typing speed test application built in Go. Test your typing
 ### Option 1: Install directly from GitHub (Recommended)
 
 ```bash
-go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
+go install github.com/utk2602/Golang/typing-speed-game/typing-game-cli@latest
 ```
 
 This will install the `cmd` binary to your `$GOPATH/bin` directory.
@@ -119,7 +119,7 @@ cd typing-speed-game
 go mod tidy
 
 # Run locally
-go run cmd/main.go
+go run typing-game-cli/main.go
 
 # Run tests
 go test ./...
@@ -143,7 +143,7 @@ To make your CLI installable by others:
 
 2. **Users can then install with:**
    ```bash
-   go install github.com/utk2602/Golang/typing-speed-game/cmd@latest
+   go install github.com/utk2602/Golang/typing-speed-game/typing-game-cli@latest
    ```
 
 ## Data Storage 💾
